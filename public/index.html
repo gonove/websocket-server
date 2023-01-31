@@ -12,6 +12,26 @@
     <h1 class="mt-2">Socket Client</h1>
     <hr>
 
+    <p>
+        Server status
+        <span id="lblOnline" class="text-success">Online</span>
+        <span id="lblOffline" class="text-danger">Offline</span>
+    </p>
+
+    <!-- Emitir mensaje cliente a servidor -->
+    <div class="row">
+
+        <div class="col">
+            <input type="text" id="txtMensaje" class="form-control">
+        </div>
+
+        <div class="col">
+            <button id="btnEnviar" class="btn btn-primary">
+                Enviar
+            </button>
+        </div>
+
+    </div>
 
     <script src="./socket.io/socket.io.js"></script>
     <script src="./socket-client.js"></script>
